@@ -10,7 +10,7 @@
 
     <script type="text/javascript" src="js/vue.js"></script>
 	<link rel="stylesheet" href="css/starlog.css">
-    <title>Login</title>
+    <title>Ingresar</title>
   </head>
 <body>
 <div class="wrapper fadeInDown">
