@@ -1,8 +1,8 @@
 /node_modules
 /public/hot
-app
+
 bootstrap
-config
+
 public
 storage
 vendor
