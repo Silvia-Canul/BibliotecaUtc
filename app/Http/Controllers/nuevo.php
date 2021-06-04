@@ -13,7 +13,7 @@ class nuevo extends Controller
      */
     public function index()
     {
-        //
+        //este es algo nuevo para todos
     }
 
     /**
