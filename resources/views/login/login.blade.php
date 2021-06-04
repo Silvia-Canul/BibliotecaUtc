@@ -25,7 +25,7 @@
     <!-- Login Form -->
     <form method="POST" action="{{ url('entrada') }}">
         @csrf
-      <input type="text" id="usuario" class="fadeIn second" name="usuario" placeholder="Usuario" Required>
+      <input type="text" id="usuario" class="fadeIn second" name="usuario" placeholder="Usuarios" Required>
       <input type="password" id="password" class="fadeIn third" name="password" placeholder="Contraseña" Required>
       <input type="submit" class="fadeIn fourth" value="Iniciar sesion">
     </form>
