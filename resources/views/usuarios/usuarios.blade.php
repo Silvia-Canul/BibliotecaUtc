@@ -9,7 +9,8 @@
     <div class="col-sm-12 text-center">
       <br>
       <h2>Usuarios</h2>
-      <h2>hola,hola,hoal</h2>
+      <h2>hola,hola,holissss
+      </h2>
 
       
 
