@@ -29,7 +29,6 @@
       <input type="password" id="password" class="fadeIn third" name="password" placeholder="Contraseña" Required>
       <input type="submit" class="fadeIn fourth" value="Iniciar sesion">
     </form>
-    
   </div>
 </div>
 
