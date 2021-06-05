@@ -18,10 +18,10 @@
           <form>
             <div class="form-row">
               <div class="col-5">
-                <input type="text" placeholder="Id libro" class="form-control" v-model="id_libro" >
+                <input type="text" placeholder="id libro" class="form-control" v-model="id_libro" >
               </div>
               <div class="col-5">
-                <input type="text" placeholder="Código del libro" class="form-control" v-model="codigo" >
+                <input type="text" placeholder="codigo del libro" class="form-control" v-model="codigo" >
               </div>
               <br>
                 <div class="col-5">
@@ -29,51 +29,51 @@
                 </div>
               <br>
                 <div class="col-5">
-                  <input type="text" placeholder="Título del libro" class="form-control" v-model="titulo" >
+                  <input type="text" placeholder="Titulo del libro" class="form-control" v-model="titulo" >
                 </div>
               <br>
               <div class="col-5">
-                <input type="text" placeholder="Autor del libro" class="form-control" v-model="autor" >
+                <input type="text" placeholder="autor del libro" class="form-control" v-model="autor" >
               </div>
               <br>
               <div class="col-5">
-                <input type="text" placeholder="Edición del libro" class="form-control" v-model="edicion" >
+                <input type="text" placeholder="edicion del libro" class="form-control" v-model="edicion" >
               </div>
               <br>
               <div class="col-5">
-                <input type="text" placeholder="Editorial del libro" class="form-control" v-model="editorial" >
+                <input type="text" placeholder="editorial del libro" class="form-control" v-model="editorial" >
               </div>
               <div class="col-5">
-                <input type="text" placeholder="Número de paginas del libro" class="form-control" v-model="paginas" >
-              </div>
-              <br>
-              <div class="col-5">
-                <input type="text" placeholder="Idioma del libro" class="form-control" v-model="idioma" >
+                <input type="text" placeholder="numero de paginas del libro" class="form-control" v-model="paginas" >
               </div>
               <br>
               <div class="col-5">
-                <input type="text" placeholder="Descripcion del libro" class="form-control" v-model="descripcion" >
+                <input type="text" placeholder="idioma del libro" class="form-control" v-model="idioma" >
               </div>
               <br>
               <div class="col-5">
-                <input type="text" placeholder="Ubicacion del libro" class="form-control" v-model="ubicacion" >
+                <input type="text" placeholder="descripcion del libro" class="form-control" v-model="descripcion" >
               </div>
               <br>
               <div class="col-5">
-                <input type="text" placeholder="Foto del libro" class="form-control" v-model="foto" >
+                <input type="text" placeholder="ubicacion del libro" class="form-control" v-model="ubicacion" >
               </div>
               <br>
               <div class="col-5">
-                <input type="text" placeholder="Estado del libro" class="form-control" v-model="activo" >
+                <input type="text" placeholder="foto del libro" class="form-control" v-model="foto" >
+              </div>
+              <br>
+              <div class="col-5">
+                <input type="text" placeholder="estado del libro" class="form-control" v-model="activo" >
               </div>
               <br>
 
               <div class="col-5">
-                <input type="text" placeholder="Created del libro" class="form-control" v-model="created_at" >
+                <input type="text" placeholder="created del libro" class="form-control" v-model="created_at" >
               </div>
               <br>
               <div class="col-5">
-                <input type="text" placeholder="Update del libro" class="form-control" v-model="updated_at" >
+                <input type="text" placeholder="update del libro" class="form-control" v-model="updated_at" >
               </div>
               <br>
               <!-- <div class="col-5">

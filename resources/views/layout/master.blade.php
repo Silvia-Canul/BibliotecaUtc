@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="token" id="token" value="<?php echo e(csrf_token()); ?>">
+  <meta name="token" id="token" value="{{ csrf_token() }}">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
   <title>BIBLIOTECA UTC</title>
@@ -62,7 +62,7 @@
           <img src="img/user.png" class="img-circle elevation-2" alt="User Image">
         </div>
         <div class="info">
-          <a href="#" class="d-block"><?php echo e(Session::get('ape')); ?></a>
+          <a href="#" class="d-block">{{Session::get('ape')}}</a>
         </div>
       </div>
 
@@ -82,7 +82,7 @@
 
             
             <ul class="nav nav-treeview">
-              <?php if(Session::get('denominacion') == "Bibliotecario" || Session::get('denominacion') == "Administrador" ): ?>
+              @if(Session::get('denominacion') == "Bibliotecario" || Session::get('denominacion') == "Administrador" )
               <li class="nav-item has-treeview">
               <a href="#" class="nav-link">
               <i class="nav-icon fas fa-user"></i>
@@ -93,31 +93,31 @@
               </a>
               <ul class="nav nav-treeview">
                 <li class="nav-item">
-                  <a href="<?php echo e(url('lector')); ?>" class="nav-link">
+                  <a href="{{url('lector')}}" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Registrar</p>
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a href="<?php echo e(url('t')); ?>" class="nav-link">
+                  <a href="{{url('t')}}" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Tipo</p>
                   </a>
                 </li>
               </ul>
             </li>
-          <?php endif; ?>
-          <?php if(Session::get('denominacion') == "Bibliotecario" || Session::get('denominacion') == "Administrador" ): ?>
+          @endif
+          @if(Session::get('denominacion') == "Bibliotecario" || Session::get('denominacion') == "Administrador" )
               <li class="nav-item">
-                <a href="#" class="nav-link">
+                <a href="{{url('libros')}}" class="nav-link">
                   <i class="nav-icon fas fa-book"></i>
                   <p>Libros</p>
                 </a>
               </li>
-              <?php endif; ?>
-              <?php if(Session::get('denominacion') == "Administrador"): ?>  
+              @endif
+              @if(Session::get('denominacion') == "Administrador")  
             <li class="nav-item has-treeview">
-              <a href="<?php echo e(url('usuario')); ?>" class="nav-link">
+              <a href="{{url('usuario')}}" class="nav-link">
               <i class="nav-icon fas fa-users"></i>
               <p>
                 Uusarios
@@ -126,24 +126,24 @@
               </a>
               <ul class="nav nav-treeview">
                 <li class="nav-item">
-                  <a href="<?php echo e(url('usuario')); ?>" class="nav-link">
+                  <a href="{{url('usuario')}}" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Registrar</p>
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a href="<?php echo e(url('r')); ?>" class="nav-link">
+                  <a href="{{url('r')}}" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Roles</p>
                   </a>
                 </li>
               </ul>
             </li>
-            <?php endif; ?>
+            @endif
 
             </ul>
           </li>
-          <?php if(Session::get('denominacion') == "Bibliotecario"): ?> 
+          @if(Session::get('denominacion') == "Bibliotecario") 
           <li class="nav-header">SECCIÓN DE PRESTAMOS</li>
           <li class="nav-item has-treeview">
             <a href="#" class="nav-link">
@@ -174,16 +174,16 @@
               </li>
             </ul>
           </li>
-          <?php endif; ?>
-          <?php if(Session::get('denominacion') == "Bibliotecario" || Session::get('denominacion') == "Administrador" ): ?>
+          @endif
+          @if(Session::get('denominacion') == "Bibliotecario" || Session::get('denominacion') == "Administrador" )
           <li class="nav-header">SESIÓN</li>
           <li class="nav-item">
-                <a href="<?php echo e(url('salir')); ?>" class="nav-link">
+                <a href="{{url('salir')}}" class="nav-link">
                   <i class="nav-icon fas fa-home"></i>
                   <p>Salir</p>
                 </a>
               </li>
-            <?php endif; ?>
+            @endif
 
         </ul>
       </nav>
@@ -199,7 +199,7 @@
     <!-- /.content-header -->
 
     <!-- Main content -->
-        <?php echo $__env->yieldContent('contenido'); ?>
+        @yield('contenido')
     <!-- /.content -->
   </div>
   <!-- /.content-wrapper -->
@@ -219,7 +219,7 @@
 </div>
 <!-- ./wrapper -->
 
-    <?php echo $__env->yieldPushContent('scripts'); ?>
+    @stack('scripts')
 <!-- jQuery -->
 <script src="plugins/jquery/jquery.min.js"></script>
 <!-- Bootstrap 4 -->
@@ -230,4 +230,3 @@
 
 </body>
 </html>
-<?php /**PATH C:\wamp64\www\BibliotecaUtc\resources\views/layout/master.blade.php ENDPATH**/ ?>

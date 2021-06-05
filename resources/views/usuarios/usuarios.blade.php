@@ -9,9 +9,6 @@
     <div class="col-sm-12 text-center">
       <br>
       <h2>Usuarios</h2>
-      <h2>perro
-      </h2>
-
       
 
 </div>  
@@ -21,8 +18,7 @@
 <div class="col-lg-12 ">
   <div class="card border-dark "  >
     <div class="card-body ">
-      <h5 class="card-title ">Lista de nuevos usuarios</h5>
-      <h5 class="card-title ">Practic de coa </h5>
+      <h5 class="card-title ">Lista de usuarios</h5>
 
 
     <span class="btn btn-outline-primary float-right " data-toggle="modal" v-on:click="showModal()"><i class="fa fa-plus"></i></span>
@@ -65,7 +61,7 @@
           
 
               <td>
-                <span class="btn btn-outline-success" @click="editarU(usuario.id_usuario)"><i class="fa fa-edit"></i></span>
+                <span class="btn btn-outline-primary" @click="editarU(usuario.id_usuario)"><i class="fa fa-edit"></i></span>
 
                 <span class="btn btn-outline-danger" @click="eliminarU(usuario.id_usuario)"><i class="fas fa-trash"></i></span>
               </td>

@@ -10,7 +10,7 @@
 
     <script type="text/javascript" src="js/vue.js"></script>
 	<link rel="stylesheet" href="css/starlog.css">
-    <title>Ingresar</title>
+    <title>Login</title>
   </head>
 <body>
 <div class="wrapper fadeInDown">
@@ -29,6 +29,7 @@
       <input type="password" id="password" class="fadeIn third" name="password" placeholder="Contraseña" Required>
       <input type="submit" class="fadeIn fourth" value="Iniciar sesion">
     </form>
+    
   </div>
 </div>
 
