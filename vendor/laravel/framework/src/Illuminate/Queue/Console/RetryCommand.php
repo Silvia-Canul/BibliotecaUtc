@@ -150,8 +150,6 @@ class RetryCommand extends Command
      *
      * @param  string  $payload
      * @return string
-     *
-     * @throws \RuntimeException
      */
     protected function refreshRetryUntil($payload)
     {

@@ -33,9 +33,7 @@ abstract class Grammar extends BaseGrammar
      *
      * @param  string  $name
      * @param  \Illuminate\Database\Connection  $connection
-     * @return void
-     *
-     * @throws \LogicException
+     * @return string
      */
     public function compileCreateDatabase($name, $connection)
     {
@@ -46,9 +44,7 @@ abstract class Grammar extends BaseGrammar
      * Compile a drop database if exists command.
      *
      * @param  string  $name
-     * @return void
-     *
-     * @throws \LogicException
+     * @return string
      */
     public function compileDropDatabaseIfExists($name)
     {
