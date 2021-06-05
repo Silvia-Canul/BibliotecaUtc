@@ -22,28 +22,29 @@ Route::get('/', function () {
 Route::get('login', function () {
     return view('login.login');
 });
+Route::group(['midlleware'=>'Session'],function(){
+    Route::get('mas', function () {
+        return view('layout.master');
+    });
+    // Route::get('c', function () {
+    //     return view('contenedor.contenedor');
+    // });
+    Route::get('lector', function () {
+        return view('lectores.lectores');
+    });
+    
+    Route::get('usuario', function () {
+        return view('usuarios.usuarios');
+    });
+    Route::get('r', function () {
+        return view('roles.roles');
+    });
+    Route::get('t', function () {
+        return view('tipos.tipos');
+    });
+    Route::view('libros','libros.libross');
+});
 
-
-Route::get('mas', function () {
-    return view('layout.master');
-});
-// Route::get('c', function () {
-//     return view('contenedor.contenedor');
-// });
-Route::get('lector', function () {
-    return view('lectores.lectores');
-});
-
-Route::get('usuario', function () {
-    return view('usuarios.usuarios');
-});
-Route::get('r', function () {
-    return view('roles.roles');
-});
-Route::get('t', function () {
-    return view('tipos.tipos');
-});
-Route::view('libros','libros.libross');
 
 
 
