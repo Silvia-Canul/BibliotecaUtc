@@ -217,11 +217,13 @@
 #32 C:\\wamp64\\www\\BibliotecaUtc\\public\\index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
 #33 {main}
 "} 
-[2021-04-24 17:01:19] local.ERROR: View [layouts.master] not found. (View: C:\wamp64\www\BibliotecaUtc\resources\views\contenedor\contenedor.blade.php) {"view":{"view":"C:\\wamp64\\www\\BibliotecaUtc\\vendor\\laravel\\framework\\src\\Illuminate\\View\\FileViewFinder.php","data":[]},"exception":"[object] (Facade\\Ignition\\Exceptions\\ViewException(code: 0): View [layouts.master] not found. (View: C:\\wamp64\\www\\BibliotecaUtc\esources\\views\\contenedor\\contenedor.blade.php) at C:\\wamp64\\www\\BibliotecaUtc\\vendor\\laravel\\framework\\src\\Illuminate\\View\\FileViewFinder.php:137)
+[2021-04-24 17:01:19] local.ERROR: View [layouts.master] not found. (View: C:\wamp64\www\BibliotecaUtc\resources\views\contenedor\contenedor.blade.php) {"view":{"view":"C:\\wamp64\\www\\BibliotecaUtc\\vendor\\laravel\\framework\\src\\Illuminate\\View\\FileViewFinder.php","data":[]},"exception":"[object] (Facade\\Ignition\\Exceptions\\ViewException(code: 0): View [layouts.master] not found. (View: C:\\wamp64\\www\\BibliotecaUtc\
+esources\\views\\contenedor\\contenedor.blade.php) at C:\\wamp64\\www\\BibliotecaUtc\\vendor\\laravel\\framework\\src\\Illuminate\\View\\FileViewFinder.php:137)
 [stacktrace]
 #0 C:\\wamp64\\www\\BibliotecaUtc\\vendor\\laravel\\framework\\src\\Illuminate\\View\\FileViewFinder.php(79): Illuminate\\View\\FileViewFinder->findInPaths('layouts.master', Array)
 #1 C:\\wamp64\\www\\BibliotecaUtc\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Factory.php(138): Illuminate\\View\\FileViewFinder->find('layouts.master')
-#2 C:\\wamp64\\www\\BibliotecaUtc\esources\\views/contenedor/contenedor.blade.php(101): Illuminate\\View\\Factory->make('layouts.master', Array)
+#2 C:\\wamp64\\www\\BibliotecaUtc\
+esources\\views/contenedor/contenedor.blade.php(101): Illuminate\\View\\Factory->make('layouts.master', Array)
 #3 C:\\wamp64\\www\\BibliotecaUtc\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(107): require('C:\\\\wamp64\\\\www\\\\B...')
 #4 C:\\wamp64\\www\\BibliotecaUtc\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(108): Illuminate\\Filesystem\\Filesystem::Illuminate\\Filesystem\\{closure}()
 #5 C:\\wamp64\\www\\BibliotecaUtc\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\PhpEngine.php(58): Illuminate\\Filesystem\\Filesystem->getRequire('C:\\\\wamp64\\\\www\\\\B...', Array)
@@ -335,13 +337,17 @@
 #54 C:\\wamp64\\www\\BibliotecaUtc\\public\\index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
 #55 {main}
 "} 
-[2021-04-24 17:47:45] local.ERROR: Use of undefined constant js - assumed 'js' (this will throw an Error in a future version of PHP) (View: C:\wamp64\www\BibliotecaUtc\resources\views\contenedor\contenedor.blade.php) {"view":{"view":"C:\\wamp64\\www\\BibliotecaUtc\esources\\views/contenedor/contenedor.blade.php","data":{"errors":"<pre class=sf-dump id=sf-dump-1913885059 data-indent-pad=\"  \"><span class=sf-dump-note>Illuminate\\Support\\ViewErrorBag</span> {<a class=sf-dump-ref>#1197</a><samp data-depth=1 class=sf-dump-expanded>
+[2021-04-24 17:47:45] local.ERROR: Use of undefined constant js - assumed 'js' (this will throw an Error in a future version of PHP) (View: C:\wamp64\www\BibliotecaUtc\resources\views\contenedor\contenedor.blade.php) {"view":{"view":"C:\\wamp64\\www\\BibliotecaUtc\
+esources\\views/contenedor/contenedor.blade.php","data":{"errors":"<pre class=sf-dump id=sf-dump-1913885059 data-indent-pad=\"  \"><span class=sf-dump-note>Illuminate\\Support\\ViewErrorBag</span> {<a class=sf-dump-ref>#1197</a><samp data-depth=1 class=sf-dump-expanded>
   #<span class=sf-dump-protected title=\"Protected property\">bags</span>: []
 </samp>}
 </pre><script>Sfdump(\"sf-dump-1913885059\", {\"maxDepth\":3,\"maxStringLength\":160})</script>
-"}},"exception":"[object] (Facade\\Ignition\\Exceptions\\ViewException(code: 0): Use of undefined constant js - assumed 'js' (this will throw an Error in a future version of PHP) (View: C:\\wamp64\\www\\BibliotecaUtc\esources\\views\\contenedor\\contenedor.blade.php) at C:\\wamp64\\www\\BibliotecaUtc\esources\\views/contenedor/contenedor.blade.php:98)
+"}},"exception":"[object] (Facade\\Ignition\\Exceptions\\ViewException(code: 0): Use of undefined constant js - assumed 'js' (this will throw an Error in a future version of PHP) (View: C:\\wamp64\\www\\BibliotecaUtc\
+esources\\views\\contenedor\\contenedor.blade.php) at C:\\wamp64\\www\\BibliotecaUtc\
+esources\\views/contenedor/contenedor.blade.php:98)
 [stacktrace]
-#0 C:\\wamp64\\www\\BibliotecaUtc\esources\\views/contenedor/contenedor.blade.php(98): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(2, 'Use of undefine...', 'C:\\\\wamp64\\\\www\\\\B...', 98, Array)
+#0 C:\\wamp64\\www\\BibliotecaUtc\
+esources\\views/contenedor/contenedor.blade.php(98): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(2, 'Use of undefine...', 'C:\\\\wamp64\\\\www\\\\B...', 98, Array)
 #1 C:\\wamp64\\www\\BibliotecaUtc\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(107): require('C:\\\\wamp64\\\\www\\\\B...')
 #2 C:\\wamp64\\www\\BibliotecaUtc\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(108): Illuminate\\Filesystem\\Filesystem::Illuminate\\Filesystem\\{closure}()
 #3 C:\\wamp64\\www\\BibliotecaUtc\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\PhpEngine.php(58): Illuminate\\Filesystem\\Filesystem->getRequire('C:\\\\wamp64\\\\www\\\\B...', Array)
@@ -453,10 +459,12 @@
 #52 C:\\wamp64\\www\\BibliotecaUtc\\public\\index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
 #53 {main}
 "} 
-[2021-04-24 22:20:46] local.ERROR: Route [entrada] not defined. (View: C:\wamp64\www\BibliotecaUtc\resources\views\login\login.blade.php) {"view":{"view":"C:\\wamp64\\www\\BibliotecaUtc\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\UrlGenerator.php","data":[]},"exception":"[object] (Facade\\Ignition\\Exceptions\\ViewException(code: 0): Route [entrada] not defined. (View: C:\\wamp64\\www\\BibliotecaUtc\esources\\views\\login\\login.blade.php) at C:\\wamp64\\www\\BibliotecaUtc\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\UrlGenerator.php:429)
+[2021-04-24 22:20:46] local.ERROR: Route [entrada] not defined. (View: C:\wamp64\www\BibliotecaUtc\resources\views\login\login.blade.php) {"view":{"view":"C:\\wamp64\\www\\BibliotecaUtc\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\UrlGenerator.php","data":[]},"exception":"[object] (Facade\\Ignition\\Exceptions\\ViewException(code: 0): Route [entrada] not defined. (View: C:\\wamp64\\www\\BibliotecaUtc\
+esources\\views\\login\\login.blade.php) at C:\\wamp64\\www\\BibliotecaUtc\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\UrlGenerator.php:429)
 [stacktrace]
 #0 C:\\wamp64\\www\\BibliotecaUtc\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\helpers.php(726): Illuminate\\Routing\\UrlGenerator->route('entrada', Array, true)
-#1 C:\\wamp64\\www\\BibliotecaUtc\esources\\views/login/login.blade.php(26): route('entrada')
+#1 C:\\wamp64\\www\\BibliotecaUtc\
+esources\\views/login/login.blade.php(26): route('entrada')
 #2 C:\\wamp64\\www\\BibliotecaUtc\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(107): require('C:\\\\wamp64\\\\www\\\\B...')
 #3 C:\\wamp64\\www\\BibliotecaUtc\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(108): Illuminate\\Filesystem\\Filesystem::Illuminate\\Filesystem\\{closure}()
 #4 C:\\wamp64\\www\\BibliotecaUtc\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\PhpEngine.php(58): Illuminate\\Filesystem\\Filesystem->getRequire('C:\\\\wamp64\\\\www\\\\B...', Array)
@@ -569,10 +577,12 @@
 #53 C:\\wamp64\\www\\BibliotecaUtc\\public\\index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
 #54 {main}
 "} 
-[2021-04-24 22:59:06] local.ERROR: Route [entrada] not defined. (View: C:\wamp64\www\BibliotecaUtc\resources\views\login\login.blade.php) {"view":{"view":"C:\\wamp64\\www\\BibliotecaUtc\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\UrlGenerator.php","data":[]},"exception":"[object] (Facade\\Ignition\\Exceptions\\ViewException(code: 0): Route [entrada] not defined. (View: C:\\wamp64\\www\\BibliotecaUtc\esources\\views\\login\\login.blade.php) at C:\\wamp64\\www\\BibliotecaUtc\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\UrlGenerator.php:429)
+[2021-04-24 22:59:06] local.ERROR: Route [entrada] not defined. (View: C:\wamp64\www\BibliotecaUtc\resources\views\login\login.blade.php) {"view":{"view":"C:\\wamp64\\www\\BibliotecaUtc\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\UrlGenerator.php","data":[]},"exception":"[object] (Facade\\Ignition\\Exceptions\\ViewException(code: 0): Route [entrada] not defined. (View: C:\\wamp64\\www\\BibliotecaUtc\
+esources\\views\\login\\login.blade.php) at C:\\wamp64\\www\\BibliotecaUtc\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\UrlGenerator.php:429)
 [stacktrace]
 #0 C:\\wamp64\\www\\BibliotecaUtc\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\helpers.php(726): Illuminate\\Routing\\UrlGenerator->route('entrada', Array, true)
-#1 C:\\wamp64\\www\\BibliotecaUtc\esources\\views/login/login.blade.php(26): route('entrada')
+#1 C:\\wamp64\\www\\BibliotecaUtc\
+esources\\views/login/login.blade.php(26): route('entrada')
 #2 C:\\wamp64\\www\\BibliotecaUtc\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(107): require('C:\\\\wamp64\\\\www\\\\B...')
 #3 C:\\wamp64\\www\\BibliotecaUtc\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(108): Illuminate\\Filesystem\\Filesystem::Illuminate\\Filesystem\\{closure}()
 #4 C:\\wamp64\\www\\BibliotecaUtc\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\PhpEngine.php(58): Illuminate\\Filesystem\\Filesystem->getRequire('C:\\\\wamp64\\\\www\\\\B...', Array)
@@ -807,7 +817,8 @@
 [stacktrace]
 #0 C:\\wamp64\\www\\BibliotecaUtc\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(1326): Illuminate\\Routing\\RouteRegistrar->attribute('apoResource', 'apiTipo')
 #1 C:\\wamp64\\www\\BibliotecaUtc\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Facades\\Facade.php(261): Illuminate\\Routing\\Router->__call('apoResource', Array)
-#2 C:\\wamp64\\www\\BibliotecaUtc\outes\\web.php(43): Illuminate\\Support\\Facades\\Facade::__callStatic('apoResource', Array)
+#2 C:\\wamp64\\www\\BibliotecaUtc\
+outes\\web.php(43): Illuminate\\Support\\Facades\\Facade::__callStatic('apoResource', Array)
 #3 C:\\wamp64\\www\\BibliotecaUtc\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\RouteFileRegistrar.php(35): require('C:\\\\wamp64\\\\www\\\\B...')
 #4 C:\\wamp64\\www\\BibliotecaUtc\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(425): Illuminate\\Routing\\RouteFileRegistrar->register('C:\\\\wamp64\\\\www\\\\B...')
 #5 C:\\wamp64\\www\\BibliotecaUtc\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(382): Illuminate\\Routing\\Router->loadRoutes('C:\\\\wamp64\\\\www\\\\B...')
@@ -1669,7 +1680,8 @@
 #0 C:\\wamp64\\www\\BibliotecaUtc\\vendor\\laravel\\framework\\src\\Illuminate\\View\\FileViewFinder.php(79): Illuminate\\View\\FileViewFinder->findInPaths('usuarioo.usuari...', Array)
 #1 C:\\wamp64\\www\\BibliotecaUtc\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Factory.php(138): Illuminate\\View\\FileViewFinder->find('usuarioo.usuari...')
 #2 C:\\wamp64\\www\\BibliotecaUtc\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\helpers.php(919): Illuminate\\View\\Factory->make('usuarioo.usuari...', Array, Array)
-#3 C:\\wamp64\\www\\BibliotecaUtc\outes\\web.php(38): view('usuarioo.usuari...')
+#3 C:\\wamp64\\www\\BibliotecaUtc\
+outes\\web.php(38): view('usuarioo.usuari...')
 #4 C:\\wamp64\\www\\BibliotecaUtc\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(230): Illuminate\\Routing\\RouteFileRegistrar->{closure}()
 #5 C:\\wamp64\\www\\BibliotecaUtc\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(200): Illuminate\\Routing\\Route->runCallable()
 #6 C:\\wamp64\\www\\BibliotecaUtc\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(695): Illuminate\\Routing\\Route->run()
@@ -2672,7 +2684,8 @@
 #44 C:\\wamp64\\www\\BibliotecaUtc\\public\\index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
 #45 {main}
 "} 
-[2021-06-05 16:22:42] local.ERROR: syntax error, unexpected token "," {"exception":"[object] (ParseError(code: 0): syntax error, unexpected token \",\" at C:\\xampp\\htdocs\\BibliotecaUtc\outes\\web.php:25)
+[2021-06-05 16:22:42] local.ERROR: syntax error, unexpected token "," {"exception":"[object] (ParseError(code: 0): syntax error, unexpected token \",\" at C:\\xampp\\htdocs\\BibliotecaUtc\
+outes\\web.php:25)
 [stacktrace]
 #0 C:\\xampp\\htdocs\\BibliotecaUtc\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(425): Illuminate\\Routing\\RouteFileRegistrar->register('C:\\\\xampp\\\\htdocs...')
 #1 C:\\xampp\\htdocs\\BibliotecaUtc\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(382): Illuminate\\Routing\\Router->loadRoutes('C:\\\\xampp\\\\htdocs...')
@@ -2703,7 +2716,8 @@
 #26 C:\\xampp\\htdocs\\BibliotecaUtc\\public\\index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
 #27 {main}
 "} 
-[2021-06-05 16:22:53] local.ERROR: syntax error, unexpected token "," {"exception":"[object] (ParseError(code: 0): syntax error, unexpected token \",\" at C:\\xampp\\htdocs\\BibliotecaUtc\outes\\web.php:25)
+[2021-06-05 16:22:53] local.ERROR: syntax error, unexpected token "," {"exception":"[object] (ParseError(code: 0): syntax error, unexpected token \",\" at C:\\xampp\\htdocs\\BibliotecaUtc\
+outes\\web.php:25)
 [stacktrace]
 #0 C:\\xampp\\htdocs\\BibliotecaUtc\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(425): Illuminate\\Routing\\RouteFileRegistrar->register('C:\\\\xampp\\\\htdocs...')
 #1 C:\\xampp\\htdocs\\BibliotecaUtc\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(382): Illuminate\\Routing\\Router->loadRoutes('C:\\\\xampp\\\\htdocs...')
