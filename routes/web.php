@@ -44,8 +44,9 @@ Route::get('t', function () {
     return view('tipos.tipos');
 });
 Route::view('libros','libros.libross');
+// Route::apiResource('apiusuario','ControllerUsuario');
 
-
+Route::view('usu','usuario');
 
 //api
 
@@ -56,7 +57,9 @@ Route::apiResource('apiR','ApiRolesController');
 Route::apiResource('apiR','ApiRolesController');
 Route::apiResource('apiT','ApiTipoController');
 Route::apiResource('apilibros','ApiLibrosController');
+Route::post('apiuasuario', 'ControllerUsuario@store')->name('apiusuario');
 
 //validacion
 Route::post('entrada', 'AccesoController@validar')->name('entrada');
 Route::get('salir','AccesoController@salir')->name('salir');
+// Route::post('apiusuario', 'ControllerUsuario')->name('apiusuario');
