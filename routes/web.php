@@ -57,7 +57,10 @@ Route::apiResource('apiR','ApiRolesController');
 Route::apiResource('apiR','ApiRolesController');
 Route::apiResource('apiT','ApiTipoController');
 Route::apiResource('apilibros','ApiLibrosController');
-Route::post('apiuasuario', 'ControllerUsuario@store')->name('apiusuario');
+
+Route::apiResource('apiusu','ControllerUsuario');
+
+
 
 //validacion
 Route::post('entrada', 'AccesoController@validar')->name('entrada');

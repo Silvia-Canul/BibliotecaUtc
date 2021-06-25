@@ -10,7 +10,7 @@ class ControllerUsuario extends Controller
     
     public function validar (Request $request){
         $respuesta;
-        $filtro=roles::where('usuario','=',$request->usuario,'and')->where('password','=',$request->password)->first();
+        $filtro=Usuarios::where('usuario','=',$request->usuario,'and')->where('password','=',$request->password)->first();
         if($filtro!=null)
         {
         $respuesta='ok';}
@@ -72,6 +72,7 @@ class ControllerUsuario extends Controller
     public function show($id)
     {
         //
+        return $usuarios=Usuarios::find($id);
     }
 
     /**
@@ -85,14 +86,14 @@ class ControllerUsuario extends Controller
     {
         //
         $usuarios=Usuarios::find($id);
-        $usuarios->id_rol=$request('id_rol');
-        $usuarios->nombre=$request('nombre');
-        $usuarios->apellido_p=$request('apellido_p');
-        $usuarios->apellido_m=$request('apellido_m');
-        $usuarios->usuario=$request('usuario');
-        $usuarios->password=$request('password');
+        $usuarios->id_rol=$request->input('id_rol');
+        $usuarios->nombre=$request->input('nombre');
+        $usuarios->apellido_p=$request->input('apellido_p');
+        $usuarios->apellido_m=$request->input('apellido_m');
+        $usuarios->usuario=$request->input('usuario');
+        $usuarios->password=$request->input('password');
         
-        if($request->hosfile('imagen')){
+        if($request->hasfile('imagen')){
             $imagenantigua=$usuarios->imagen;
             Storage::delete('/public',$imagen);
             $usuarios->imagen=$request->file('imagen')->storage('img','public');
