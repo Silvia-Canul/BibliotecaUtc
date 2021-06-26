@@ -114,5 +114,7 @@ class ControllerUsuario extends Controller
     public function destroy($id)
     {
         //
+        $usuarios=Usuarios::destroy($id);
+        return response()->json("usuario eliminado",200);
     }
 }
