@@ -42,11 +42,13 @@ Route::group(['midlleware'=>'Session'],function(){
     Route::get('t', function () {
         return view('tipos.tipos');
     });
-    Route::view('libros','libros.libross');
+   // Route::view('libros','libros.libross');
 });
-
+Route::view('libros','libros.libross');
 
 Route::view('usu','usuario');
+Route::view('registrox','RegisterBiblioteca');
+
 
 //api
 
@@ -59,10 +61,14 @@ Route::apiResource('apiT','ApiTipoController');
 Route::apiResource('apilibros','ApiLibrosController');
 
 Route::apiResource('apiusu','ControllerUsuario');
+Route::apiResource('apix','RegisterBiblioteca');
 
 
 
 //validacion
 Route::post('entrada', 'AccesoController@validar')->name('entrada');
 Route::get('salir','AccesoController@salir')->name('salir');
-// Route::post('apiusuario', 'ControllerUsuario')->name('apiusuario');
+
+Route::get('apireg','RegisterBiblioteca@registro')->name('apireg');
+Route::post('apireg','RegisterBiblioteca@registro')->name('apireg');
+

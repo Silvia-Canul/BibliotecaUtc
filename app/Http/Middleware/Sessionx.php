@@ -6,7 +6,7 @@ use Closure;
 use Illuminate\Http\Request;
 use Session;
 
-class Session
+class Sessionx
 {
     /**
      * Handle an incoming request.
