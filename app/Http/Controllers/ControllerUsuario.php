@@ -48,7 +48,7 @@ class ControllerUsuario extends Controller
         $usuarios->usuario=$request->input('usuario');
         $usuarios->password=$request->input('password');
         // $usuarios->imagen=$request->input('imagen');
-        
+        //comentario 
         
         if($request->hasFile('imagen'))
         {
