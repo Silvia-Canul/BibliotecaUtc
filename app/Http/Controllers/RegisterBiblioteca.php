@@ -20,13 +20,13 @@ class RegisterBiblioteca extends Controller
         $producto = $request->get('id_usuario');
         $pro=$request->get('SistemasOperativos');
         
-       // $user = Usuarios::where("id_usuario",'=',$producto)->select('nombres','id_usuario')->first();
-       // $maestro=Maestros::where("cedula",'=',$producto)->select('nombre','cedula')->first();
+        $user = Usuarios::where("id_usuario",'=',$producto)->select('nombres','id_usuario')->first();
+        $maestro=Maestros::where("cedula",'=',$producto)->select('nombre','cedula')->first();
 
-        //$request->validate([
-        //    'id_usuario' =>'required',
-        //    'actividad' => 'required',  
-        //]);
+        $request->validate([
+            'id_usuario' =>'required',
+           'actividad' => 'required',  
+        ]);
 
         //if($user!=null){
             
