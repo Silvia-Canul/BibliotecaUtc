@@ -17,9 +17,9 @@ class Sessionx
      */
     public function handle(Request $request, Closure $next)
     {
-        if(Session::get('denominacion')=='Administrador')
+        if(Session::get('denominacion')=='usuario')
         return $next($request);
-        if(Session::get('denominacion')=='Administracion')
+        if(Session::get('denominacion')=='administrador')
         return $next($request);
     }
 }

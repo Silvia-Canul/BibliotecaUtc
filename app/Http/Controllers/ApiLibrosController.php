@@ -15,7 +15,7 @@ class ApiLibrosController extends Controller
     public function index()
     {
        //
-       return Libros::all();
+       return Libros::where("Activo",'=','1')->select('titulo','ISBN')->get();
     }
 
     /**
@@ -59,8 +59,9 @@ class ApiLibrosController extends Controller
     public function show($id)
     {
         //
-        $libro=Libros::find($id);
+        $libro=Libros::where('Activo','=','1')->find($id);
         return $libro;
+        
     }
 
     /**

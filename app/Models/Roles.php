@@ -8,14 +8,16 @@ use Illuminate\Database\Eloquent\Model;
 class Roles extends Model
 {
     use HasFactory;
-    protected $table="roles";
-    protected $primaryKey="id_rol";
+    protected $table="tipos_usuarios";
+    protected $primaryKey="id_tipo";
     public $timestamps=false;
    
     protected $fillable=
     [
-        'id_rol',
-        'nombre',
+        'id_tipo',
+        'nombre_tipo',
+        'descripcion',
+        'activo'
         
     ];
 }

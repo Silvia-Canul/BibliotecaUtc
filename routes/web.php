@@ -60,6 +60,9 @@ Route::apiResource('apiR','ApiRolesController');
 Route::apiResource('apiT','ApiTipoController');
 Route::apiResource('apilibros','ApiLibrosController');
 
+//api prestamo
+Route::apiResource('apiPrestamo','ApiPrestamoCOntroller');
+
 Route::apiResource('apiusu','ControllerUsuario');
 Route::apiResource('apix','RegisterBiblioteca');
 
@@ -72,3 +75,6 @@ Route::get('salir','AccesoController@salir')->name('salir');
 Route::get('apireg','RegisterBiblioteca@registro')->name('apireg');
 Route::post('apireg','RegisterBiblioteca@registro')->name('apireg');
 
+
+//prestamo
+Route::view('prestamo','prestamo');

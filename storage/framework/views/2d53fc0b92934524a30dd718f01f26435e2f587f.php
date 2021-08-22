@@ -62,7 +62,7 @@
           <img src="img/user.png" class="img-circle elevation-2" alt="User Image">
         </div>
         <div class="info">
-          <a href="#" class="d-block"><?php echo e(Session::get('ape')); ?></a>
+          <a href="#" class="d-block"><?php echo e(Session::get('denominacion')); ?></a>
         </div>
       </div>
 
@@ -82,7 +82,7 @@
 
             
             <ul class="nav nav-treeview">
-              <?php if(Session::get('denominacion') == "Bibliotecario" || Session::get('denominacion') == "Administrador" ): ?>
+              <?php if(Session::get('denominacion') == "usuario" || Session::get('denominacion') == "Administrador" ): ?>
               <li class="nav-item has-treeview">
               <a href="#" class="nav-link">
               <i class="nav-icon fas fa-user"></i>
@@ -115,7 +115,7 @@
                 </a>
               </li>
               <?php endif; ?>
-              <?php if(Session::get('denominacion') == "Administrador"): ?>  
+              <?php if(Session::get('denominacion') == "usuario"): ?>  
             <li class="nav-item has-treeview">
               <a href="<?php echo e(url('usuario')); ?>" class="nav-link">
               <i class="nav-icon fas fa-users"></i>
@@ -175,7 +175,7 @@
             </ul>
           </li>
           <?php endif; ?>
-          <?php if(Session::get('denominacion') == "Bibliotecario" || Session::get('denominacion') == "Administrador" ): ?>
+          <?php if(Session::get('denominacion') == "usuario" || Session::get('denominacion') == "administrador" ): ?>
           <li class="nav-header">SESIÓN</li>
           <li class="nav-item">
                 <a href="<?php echo e(url('salir')); ?>" class="nav-link">
@@ -227,6 +227,8 @@
 <!-- AdminLTE App -->
 <script src="dist/js/adminlte.js"></script>
 <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
+<script src="js/vue.min.js"></script>
+<script src="js/vue-resource.js"></script>
 
 </body>
 </html>

@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Models\Usuario;
+use App\Models\UserLogin;
 use Session;
 use Redirect;
 use Cache;
@@ -19,7 +20,7 @@ class AccesoController extends Controller
         $user=$request->usuario;
         $contraseña=$request->password;
         
-        $resp= Usuario::where('usser','=',$user)
+        $resp= UserLogin::where('nombres','=',$user)
         ->where('password','=', $contraseña)
         ->get();
        
@@ -33,10 +34,10 @@ class AccesoController extends Controller
             Session::put('ape',$resp[0]->nombres);
 
 
-            if($resp[0]->denominacion->denominacion=="Administrador")
-                return Redirect::to('usuario');
-            elseif ($resp[0]->denominacion->denominacion=="Bibliotecario")
-                return Redirect::to('lector');
+            if($resp[0]->denominacion->denominacion=="usuario")
+                return Redirect::to('prestamo');
+            elseif ($resp[0]->denominacion->denominacion=="administrador")
+                return Redirect::to('prestamo');
             }
             else
                 return Redirect::to('login');
