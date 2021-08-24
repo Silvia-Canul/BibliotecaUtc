@@ -80,15 +80,15 @@
               <div class="row">
                 <div class="col-sm-4">
                   <label>Nombre</label>
-                  <input type="text" name="" placeholder="Ingrese su Nombre" class="form-control" v-model="nombre">
+                  <input type="text" name="" placeholder="Ingrese su nombre" class="form-control" v-model="nombre">
                   <label>Apellido Paterno</label>
-                  <input type="text" name="" placeholder="Ingrese su Apellido" class="form-control" v-model="apellido_p">
+                  <input type="text" name="" placeholder="Ingrese su apellido" class="form-control" v-model="apellido_p">
                   <label>Apellido Materno</label>
-                  <input type="text" name="" placeholder="Ingrese su Apellido" class="form-control" v-model="apellido_m">
+                  <input type="text" name="" placeholder="Ingrese su apellido" class="form-control" v-model="apellido_m">
                   <label>Correo</label>
-                 <input type="text" name="" placeholder="Ingrese su Correo" class="form-control" v-model="correo">
+                 <input type="text" name="" placeholder="Ingrese su correo" class="form-control" v-model="correo">
                  <label>Grupo</label>
-                 <input type="text" name="" placeholder="Ingrese su Grupo" class="form-control" v-model="grupo">
+                 <input type="text" name="" placeholder="Ingrese su grupo" class="form-control" v-model="grupo">
                 
                   
                   <!-- <select class="form-control" v-model="id_tipo">

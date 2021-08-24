@@ -22,30 +22,31 @@ Route::get('/', function () {
 Route::get('login', function () {
     return view('login.login');
 });
+Route::group(['midlleware'=>'Session'],function(){
+    Route::get('mas', function () {
+        return view('layout.master');
+    });
+    // Route::get('c', function () {
+    //     return view('contenedor.contenedor');
+    // });
+    Route::get('lector', function () {
+        return view('lectores.lectores');
+    });
+    
+    Route::get('usuario', function () {
+        return view('usuarios.usuarios');
+    });
+    Route::get('r', function () {
+        return view('roles.roles');
+    });
+    Route::get('t', function () {
+        return view('tipos.tipos');
+    });
+    Route::view('libros','libros.libross');
+});
 
 
-Route::get('mas', function () {
-    return view('layout.master');
-});
-// Route::get('c', function () {
-//     return view('contenedor.contenedor');
-// });
-Route::get('lector', function () {
-    return view('lectores.lectores');
-});
-
-Route::get('usuario', function () {
-    return view('usuarios.usuarios');
-});
-Route::get('r', function () {
-    return view('roles.roles');
-});
-Route::get('t', function () {
-    return view('tipos.tipos');
-});
-Route::view('libros','libros.libross');
-
-
+Route::view('usu','usuario');
 
 //api
 
@@ -57,6 +58,11 @@ Route::apiResource('apiR','ApiRolesController');
 Route::apiResource('apiT','ApiTipoController');
 Route::apiResource('apilibros','ApiLibrosController');
 
+Route::apiResource('apiusu','ControllerUsuario');
+
+
+
 //validacion
 Route::post('entrada', 'AccesoController@validar')->name('entrada');
 Route::get('salir','AccesoController@salir')->name('salir');
+// Route::post('apiusuario', 'ControllerUsuario')->name('apiusuario');
