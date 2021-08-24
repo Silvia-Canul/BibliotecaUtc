@@ -45,6 +45,7 @@ Route::group(['midlleware'=>'Session'],function(){
     Route::view('libros','libros.libross');
 });
 
+Route::resource('/materias',MateriasController::class);
 
 Route::view('usu','usuario');
 
