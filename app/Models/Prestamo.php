@@ -9,17 +9,17 @@ class Prestamo extends Model
 {
     use HasFactory;
     protected $table="prestamos";
-    protected $primaryKey="id_prestamo";
+    protected $primaryKey="id_folio";
     public $timestamps=false;
    
+
+
     protected $fillable=
     [
-        'id_prestamo',
-        'id_libro',
-        'ISBN',
+        'id_folio',
         'fecha_prestamo',
-        'describe_estado',
-        'folio'
+        'describe_estado'
         
     ];
+
 }

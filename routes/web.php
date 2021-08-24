@@ -59,9 +59,10 @@ Route::apiResource('apiR','ApiRolesController');
 Route::apiResource('apiR','ApiRolesController');
 Route::apiResource('apiT','ApiTipoController');
 Route::apiResource('apilibros','ApiLibrosController');
+Route::apiResource('apiejem','ApiEjemplaresController');
 
 //api prestamo
-Route::apiResource('apiPrestamo','ApiPrestamoCOntroller');
+Route::apiResource('apiPrestamo','ApiPrestamoController');
 
 Route::apiResource('apiusu','ControllerUsuario');
 Route::apiResource('apix','RegisterBiblioteca');
@@ -78,3 +79,4 @@ Route::post('apireg','RegisterBiblioteca@registro')->name('apireg');
 
 //prestamo
 Route::view('prestamo','prestamo');
+Route::view('prestamos','detprestamos');

@@ -15,6 +15,8 @@ class Libros extends Model
     public $timestamps=false;
     public $incrementing=false;
 
+
+
     public $fillable=[
     'id_libro',
     'codigo',
@@ -34,7 +36,7 @@ class Libros extends Model
     'updated_at',
     // 'id_carrera',
     // 'id_materia',
-
    
     ];
+    
 }

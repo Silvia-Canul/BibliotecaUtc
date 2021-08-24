@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Libros;
+use App\Models\ejemplares;
 use App\Models\Prestamo;
 use App\models\Detalle_prestamo;
 use DB;
@@ -18,6 +19,14 @@ class ApiPrestamoController extends Controller
     public function index()
     {
         //
+        //$prestamos = DB::table('prestamos as a')
+        //->join('detalle_prestamo as b','a.folio','=','b.folio')
+        //->select('b.folio')
+        //->groupBy('b.folio')
+        //->get();
+        //return $prestamos;
+        return $prestamos=Detalle_prestamo::all();
+
     }
 
     /**
@@ -44,18 +53,19 @@ class ApiPrestamoController extends Controller
                 'id_libro'=>$detalles[$i]['id_libro'],
                 'ISBN'=>$detalles[$i]['ISBN'],
                 //'fecha_prestamo'=>$detalles[$i]['fecha_prestamo'],
-                'describe_estado'=>$detalles[$i]['describe_estado']
+                'describe_estado'=>$detalles[$i]['describe_estado'],
+                'id_ejemplar'=>$detalles[$i]['id_ejemplar']
                 //'activo'=>$request->get('activo')
             ];
-            $activo=$detalles[$i]['id_libro'];
-            DB::update("UPDATE libros
+            $activo=$detalles[$i]['id_ejemplar'];
+            DB::update("UPDATE ejemplares
                         SET activo='0'
-                        where id_libro='$activo'");
+                        where id_ejemplar='$activo'");
         }
         if($records!=null){
-            $prestamo->save();
+            //$prestamo->save();
 
-            Detalle_prestamo::insert($records);
+            Prestamo::insert($records);
         }
         
 

@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Libros;
+use App\Models\ejemplares;
+use DB;
 
 class ApiLibrosController extends Controller
 {
@@ -15,7 +17,15 @@ class ApiLibrosController extends Controller
     public function index()
     {
        //
-       return Libros::where("Activo",'=','1')->select('titulo','ISBN')->get();
+       //return Libros::where("Activo",'=','1')->select('titulo','ISBN')->get();
+
+      // $libros = DB::table('Libros as a')
+        //->join('ejemplares as b','a.id_libro','=','b.id_libro')
+        //->select('titulo')->get();
+
+        //return $libros;
+
+       //return Libros::all();
     }
 
     /**
@@ -59,8 +69,11 @@ class ApiLibrosController extends Controller
     public function show($id)
     {
         //
-        $libro=Libros::where('Activo','=','1')->find($id);
-        return $libro;
+        //$libros = DB::table('Libros as a')
+        //->join('ejemplares as b','a.id_libro','=','b.id_libro')
+        //->find($id);
+        //return $libro;
+        return $tipos=ejemplares::find($id);
         
     }
 
