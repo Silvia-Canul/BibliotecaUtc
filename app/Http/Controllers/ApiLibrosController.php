@@ -3,10 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\Libros;
-use App\Models\ejemplares;
-use DB;
-
+use App\Models\Libro;
+use Storage;
 class ApiLibrosController extends Controller
 {
     /**
@@ -16,16 +14,9 @@ class ApiLibrosController extends Controller
      */
     public function index()
     {
-       //
-       //return Libros::where("Activo",'=','1')->select('titulo','ISBN')->get();
+        //
+        return $libros=Libro::all();
 
-      // $libros = DB::table('Libros as a')
-        //->join('ejemplares as b','a.id_libro','=','b.id_libro')
-        //->select('titulo')->get();
-
-        //return $libros;
-
-       //return Libros::all();
     }
 
     /**
@@ -37,27 +28,35 @@ class ApiLibrosController extends Controller
     public function store(Request $request)
     {
         //
-        $libro = new Libros;
-        $libro->id_libro=$request->get('id_libro');
-        $libro->codigo=$request->get('codigo');
-        $libro->ISBN=$request->get('ISBN');
-        $libro->titulo=$request->get('titulo');
-        $libro->edicion=$request->get('edicion');
-        $libro->editorial=$request->get('editorial');
-        $libro->paginas=$request->get('paginas');
-        $libro->idioma=$request->get('idioma');
-        $libro->ejemplares=$request->get('ejemplares');
-        $libro->descripcion=$request->get('descripcion');
-        $libro->ubicacion=$request->get('ubicacion');
-        $libro->foto=$request->get('foto');
-        $libro->activo=$request->get('activo');
-        $libro->created_at=$request->get('created_at');
-        $libro->updated_at=$request->get('updated_at');
-        // $libro->id_carrera=$request->get('id_carrera');
-        // $libro->id_materia=$request->get('id_materia');
- 
-        
-        $libro->save();
+
+        $libros = new Libro;
+        $libros->ISBN=$request->input('ISBN');
+        $libros->titulo=$request->input('titulo');
+        $libros->id_autor=$request->input('id_autor');
+        $libros->id_editorial=$request->input('id_editorial');
+        $libros->edicion=$request->input('edicion');
+        $libros->id_carrera=$request->input('id_carrera');
+        $libros->paginas=$request->input('paginas');
+        $libros->id_clasifidewey=$request->input('id_clasifidewey');
+        $libros->resenia=$request->input('resenia');
+        $libros->ubicacion=$request->input('ubicacion');
+         $libros->describe_estado=$request->input('describe_estado');
+        $libros->foto=$request->input('foto');
+        $libros->created_at=$request->input('created_at');
+        $libros->updated_at=$request->input('updated_at');
+        $libros->activo=$request->input('activo');
+
+
+        if ($request->hasFile('foto'))
+        {
+          $foto=$request->file('foto')->store('img','public');  
+        }else{
+            $foto="";
+        }
+        $libros->foto=$foto;
+        $libros->save();
+
+
     }
 
     /**
@@ -69,12 +68,7 @@ class ApiLibrosController extends Controller
     public function show($id)
     {
         //
-        //$libros = DB::table('Libros as a')
-        //->join('ejemplares as b','a.id_libro','=','b.id_libro')
-        //->find($id);
-        //return $libro;
-        return $tipos=ejemplares::find($id);
-        
+        return $libros=Libro::find($id);
     }
 
     /**
@@ -87,27 +81,26 @@ class ApiLibrosController extends Controller
     public function update(Request $request, $id)
     {
         //
-        $libro=Libros::find($id);
+        $libros = new Libro;
+        $libros= Libro::find($id);
+        $libros->ISBN=$request->input('ISBN');
+        $libros->titulo=$request->input('titulo');
+        $libros->id_autor=$request->input('id_autor');
+        $libros->id_editorial=$request->input('id_editorial');
+        $libros->edicion=$request->input('edicion');
+        $libros->id_carrera=$request->input('id_carrera');
+        $libros->paginas=$request->input('paginas');
+        $libros->id_clasifidewey=$request->input('id_clasifidewey');
+        $libros->resenia=$request->input('resenia');
+        $libros->ubicacion=$request->input('ubicacion');
+        $libros->describe_estado=$request->input('describe_estado');
+        $libros->foto=$request->input('foto');
+        $libros->created_at=$request->input('created_at');
+        $libros->updated_at=$request->input('updated_at');
+        $libros->activo=$request->input('activo');
 
-        $libro->id_libro=$request->get('id_libro');
-        $libro->codigo=$request->get('codigo');
-        $libro->ISBN=$request->get('ISBN');
-        $libro->titulo=$request->get('titulo');
-        $libro->edicion=$request->get('edicion');
-        $libro->editorial=$request->get('editorial');
-        $libro->paginas=$request->get('paginas');
-        $libro->idioma=$request->get('idioma');
-        $libro->ejemplares=$request->get('ejemplares');
-        $libro->descripcion=$request->get('descripcion');
-        $libro->ubicacion=$request->get('ubicacion');
-        $libro->foto=$request->get('foto');
-        $libro->activo=$request->get('activo');
-        $libro->created_at=$request->get('created_at');
-        $libro->updated_at=$request->get('update_at');
-        // $libro->id_carrera=$request->get('id_carrera');
-        // $libro->id_materia=$request->get('id_materia');
-        
-        $libro->update();
+           $libros->update();
+
     }
 
     /**
@@ -119,6 +112,8 @@ class ApiLibrosController extends Controller
     public function destroy($id)
     {
         //
-        return Libros::destroy($id);
+        return $libros=Libro::destroy($id);
+        //return response()->json("libro eliminado",200);
     }
+    
 }

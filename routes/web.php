@@ -47,8 +47,11 @@ Route::group(['midlleware'=>'Session'],function(){
 Route::view('libros','libros.libross');
 
 Route::view('usu','usuario');
+Route::view('libros','libro');
 Route::view('registrox','RegisterBiblioteca');
 
+Route::apiResource('apiT','ApiTipoController');
+Route::apiResource('apiL','ApiLibrosController');
 
 //api
 

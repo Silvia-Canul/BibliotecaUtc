@@ -16,7 +16,7 @@ function init()
 		data:{
 			tipos:[],
 			nom:'hola',
-			id_tipo:'',
+			folio:'',
 			tipo:'',
     		activo:'',
 			id_auxi:'',
@@ -88,15 +88,7 @@ function init()
 				});
 				this.Salir();
 			},
-			eliminarT:function(id){
-				var p=confirm('¿Esta seguro que desea eliminar?');
-				if(p==true)
-					this.$http.delete(UrlT +'/'+id)
-				.then(function(json){
-					this.getTi();
-					
-				});
-			},
+
 			
 		}
 
