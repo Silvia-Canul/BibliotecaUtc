@@ -19,7 +19,7 @@
   <div class="card border-dark "  >
     <div class="card-body ">
       <h5 class="card-title ">Lista de usuarios</h5>
-<h4>HOLA</h4>
+
 
     <span class="btn btn-outline-primary float-right " data-toggle="modal" v-on:click="showModal()"><i class="fa fa-plus"></i></span>
     <br><br>
